@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= locals.title %>
+    </title>
+    <link rel="stylesheet" href="/css/output.css">
+    <script defer src="/js/script.js"></script>
+</head>
+
+<body>
+    <div class="min-h-screen flex flex-col justify-between ">
+        <%- include('../partials/header_admin.ejs') %>
+
+            <main class="flex-grow ">
+                <%- body %>
+            </main>
+    </div>
+
+    <%- include('../partials/footer.ejs') %>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Google Fonts at the top */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
+
+/* Apply global styles in the base layer */
+@layer base {
+    body {
+        font-family: 'Poppins', sans-serif;
+        color: var(--black);
+        font-size: var(--font-size-base);
+        background-color: hwb(240 97% 2%);
+        background-image: url("/img/img-noise.png");
+        margin: 0;
+    }
+}
+
+/* Define your custom component styles if needed */
+@layer components {
+    .my-custom-style {
+        /* Add custom component styles here if needed */
+    }
+}
